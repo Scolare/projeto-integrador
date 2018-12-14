@@ -1,0 +1,14 @@
+nav{
+	background: #c34; /* altera a cor de fundo */
+}
+
+li{
+	list-style: none; /* trabalha com o estilo das listas (li) */
+	display: inline; /* é utilizado para trabalhar com o alinhamento */
+}
+
+.menu--link{
+	color: #000; /* altera a cor da fonte */ 	
+	text-decoration: none; /* altera a decoração do texto */ 
+	list-style: none;
+}
