@@ -1,0 +1,38 @@
+#quadrado--preto{
+	width: 400px;
+	height: 400px;
+	position: relative;
+
+	animation-name: movimento; /*aqui eu dou nome ao movimento */
+	animation-duration: 10s; /*duracao que animacao vai ter */
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes movimento{
+	0% { /* ponto inicial da animacao */
+		left:-600px;
+		top:0px;
+	}
+
+	/*25% {
+		left:100px;
+		top:0px;
+	}
+
+	50% {
+		left:500px;
+		top:0px;
+	}*/
+
+	75% { /* ponto final da animacao */
+		left:700px;
+		top:0px;
+	}
+
+	100%{
+		left:1000px;
+		top:0px;
+		transform: rotateZ(0deg);
+	}
+}
