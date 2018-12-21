@@ -3,16 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Meu Site</title>
+	<title>Nosso Site</title>
 	<link rel="stylesheet" type="text/css" href="../BOOTSTRAP/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: black;"> 
-	<!--OU POSSO USAR UMA IMAGEM COMO FUNDO, QUE SERIA DESSA FORMA: style="background: url(img/vingadores_fundo.jpg)"-->
+<body> 
+<!--MENU PRINCIPAL-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light"><!--MENU PRINCIPAL-->
-
-  <a class="navbar-brand" href="index.html"><img src="img/marvelstudios.png" alt="Logo Marvel" height="30" width="150"></a>
+  <a class="navbar-brand" href="index.html"><img src="img/marvelstudios.png" alt="Logo Marvel" height="30" width="130"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,25 +19,52 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="file:///Users/senac_nep/Documents/Documentos%20Luiz%20Felipe/Aula6/index.html">Página Inicial<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Página Inicial<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Filmes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+          <a class="dropdown-item" href="#">Another</a>
+      <a class="dropdown-item" href="#">Another</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="contato.html">Contato</a>
+      
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Heróis Marvel
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div><!--linha divisória-->
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
       </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="form.html">Contato</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Luiz Felipe</a>
+      </li>
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
@@ -46,12 +72,11 @@
     </form>
   </div>
 </nav>
+<!--MENU PRINCIPAL-->
 
-   <center><img src="img/marvelstudios.png" alt="Logo"> </center>
+   <center><img src="img/marvelstudios.png" alt="Logo"></center>
 
 <!--INICIO DO CARROSEU-->
-<div class="container">
-  <div class="row">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -73,18 +98,20 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-  </div>
 <!--FINAL DO CARROSEU-->
 
 
 <!--INICIO DA IMAGEM DIVISÓRIA CENTRAL-->
-    <div class="row" style="background-color: blue; height: 25px"></div>
+<div class="container">
+    <div class="barra-central"></div>
       <div class="col-sm-12 col-lg"></div>
+      <div class="row" style="background-color: black; height: 25px"></div>
   	<div class="row">
-        <img src="img/marvel.gif" alt="Os Vingadores" height="100" width="1150">
+        <img src="img/marvel.gif" alt="Os Vingadores" height="180" width="1150">
     </div>
+    <div class="row" style="background-color: black; height: 25px"></div>
       <div class="col-sm-12 col-lg"></div><!--EM TELAS IGUAIS OU SUPERIOR A 540PX-->
-    <div class="row" style="background-color: blue; height: 25px"></div>
+    <div class="barra-central"></div>
 </div>
 <!--FIM DA IMAGEM DIVISÓRIA CENTRAL-->
 
@@ -92,7 +119,7 @@
 <!--INICIO DOS CARDS-->
 <div class="container">
   <div class="row">
-    <div class="card-group">
+    <div class="card-deck">
     <!-- CARD-DECK: deixa os cards separados. CARDS-GROUP: deixa os cards sem juntos-->
       <div class="card">
         <img class="card-img-top" src="img/iron_man.jpg" alt="Homem de Ferro">
@@ -123,9 +150,9 @@
 </div>
 
 <div class="container">
-<div class="row" style="background-color: blue; height: 25px"></div>
+<div class="row" style="background-color: black; height: 25px"></div>
   <div class="row">
-    <div class="card-group">
+    <div class="card-deck">
     <!-- CARD-DECK: deixa os cards separados. CARDS-GROUP: deixa os cards sem juntos-->
       <div class="card">
         <img class="card-img-top" src="img/gaviao.jpg" alt="Gavião Arqueiro">
@@ -156,9 +183,9 @@
 </div>
 
 <div class="container">
-<div class="row" style="background-color: blue; height: 25px"></div>
+<div class="row" style="background-color: black; height: 25px"></div>
   <div class="row">
-    <div class="card-group">
+    <div class="card-deck">
     <!-- CARD-DECK: deixa os cards separados. CARDS-GROUP: deixa os cards sem juntos-->
       <div class="card">
         <img class="card-img-top" src="img/aranha.jpg" alt="Homem Aranha">
@@ -192,9 +219,8 @@
 
 <!--INICIO DO RODAPÉ-->
 <div class="container">
-	<div class="row">
-	 	<div class="col-sm-12 col-lg-2" style="background-color: red; height: 100px"></div>
-	 	<div class="col-sm-12 col-lg-10" style="background-color: blue; height: 100px"></div>
+	<div class="row" style="background-color: blue; height: 150px">
+	 	<div class="col-sm-12 col-lg-10"></div>
 	 	<!--EM TELAS IGUAIS OU SUPERIOR A 540PX-->
 	</div>
 </div>
