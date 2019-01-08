@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 body{
 	background-color: #9C9C9C;
-	font-family: 'Bangers', cursive;
-	font-size: 2em;
+	font-family: 'Ubuntu', cursive;
+	font-size: 1em;
 }
 
 .jumbotron, .card{
